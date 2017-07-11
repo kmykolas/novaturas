@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{$lang}">
+	<head>
+		<title>Uzduotis</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="ROBOTS" content="Index, FOLLOW" />
+		<meta name="author" content="Mykolas Kazlauskas" />
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" /> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtDQL32YOP5q_6zyMGnK-4xWla51xqqEI"></script>
+        <script src="js/main.js"></script>
+	</head>
+	<body>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="">Užduotis-novaturas</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class=""><a href="./?act=airports-list">Oro uostai</a></li>
+              <li class=""><a href="./?act=airlines-list">Avialinijos</a></li>
+              <li class=""><a href="./?act=data-form">Atnaujinti šalis</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Papildoma
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./?act=extra1">Šalys be avialinijų</a>
+                  <a class="dropdown-item" href="./?act=extra2">Oro uostų avialinijos pagal šąlį</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>        
+		<div class="container">{$main_output}</div>
+	</body>
+</html>
